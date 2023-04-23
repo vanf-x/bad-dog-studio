@@ -1,0 +1,76 @@
+/* ********* Custom Properties ********* */
+/*personalización de colores*/
+:root {
+  --first-color: rgb(217, 0, 98);
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --second-color: rgb(20, 25, 45);
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: rgb(80, 20, 100);
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+
+  --link-color: rgb(80, 158, 227);
+  --link-alpha-color: rgba(80, 158, 227, 0.75);
+
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+}
+
+/* ********* Reset Styles ********* */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* ********* Bootstrap Styles ********* */
+/*para modificar los estilos css de bootstrap lo mejor es ir a la dirección del cdn y a la url sacarle el .min y ahi con F3 buscar
+la propiedad que se desee cambiar
+*/
+.bg-dark{
+    /*se modifica la propiedad bg-dark de bootstrap y se le pone important para q la pise*/
+    background-color: var(--second-color)!important;
+}
+.dropdown-item{
+    color: var(--first-alpha-color);
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+.dropdown-item:hover{
+    color: var(--third-alpha-color);
+}
+.navbar-brand img{
+    width: auto;
+    height: 3rem;
+}
+.navbar-dark .navbar-toggler{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 0.3s ease-out;
+
+}
+.navbar-dark .navbar-toggler:hover {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 98, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: .75;
+}
+.nav-item{
+    transition: all 0.3s ease-out;
+}
+.nav-item:hover{
+    background-color: var(--first-alpha-color);
+}
+
+.nav-link{
+    margin-left: 0.5rem;
+    color: var(--first-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: var(--bs-white);
+}
+
+/* ********* My Styles ********* */
+
+
+@media(min-width: 992px){
+    .nav-item:hover{
+        background-color: transparent;
+    }
+}
