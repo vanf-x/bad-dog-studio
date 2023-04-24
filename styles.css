@@ -16,11 +16,20 @@
 }
 
 /* ********* Reset Styles ********* */
+a{
+    color: var(--link-color);
+    transition: all 0.3s ease-out;
+}
+a:hover{
+    color: var(--first-color);
+
+}
 body {
   font-family: "Raleway", sans-serif;
 }
 
 /* ********* Bootstrap Styles ********* */
+
 /*para modificar los estilos css de bootstrap lo mejor es ir a la dirección del cdn y a la url sacarle el .min y ahi con F3 buscar
 la propiedad que se desee cambiar
 */
@@ -67,8 +76,25 @@ la propiedad que se desee cambiar
 }
 
 /* ********* My Styles ********* */
-
-
+.bg-gradient-blue-green{
+    background-color: rgba(83,184,152,1);
+    background-image: linear-gradient(
+        135deg,
+        rgba(47, 145, 224, 0.91),
+        rgba(7, 31, 51, 0.97) 79%
+    );
+    background-image: linear-gradient(
+        135deg,
+        rgba(28, 118, 173, 0.92),
+        rgba(83, 184, 152, 1)
+    );
+}
+.bg-third-color{
+    background: var(--third-color);
+}
+.text-third{
+    color: var(--third-color);
+}
 @media(min-width: 992px){
     .nav-item:hover{
         background-color: transparent;
