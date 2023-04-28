@@ -105,7 +105,9 @@ la propiedad que se desee cambiar
 .bg-first-color {
   background-color: var(--first-color);
 }
-
+.bg-second-alpha-color{
+  background-color: var(--second-alpha-color);
+}
 .bg-third-color {
   background: var(--third-color);
 }
